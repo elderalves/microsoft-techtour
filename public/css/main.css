@@ -45,7 +45,7 @@ header .languages li {
 }
 
 header .languages img {
-  width: 45px;
+  width: 30px;
   margin-right: 10px;
 }
 
@@ -173,6 +173,29 @@ header .languages img {
   height: 100%;
 }
 
+.home-map__svg {
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.home-map__svg svg {
+  max-width: 683px;
+}
+
+.home-map__svg #vitoria,
+.home-map__svg #belo-horizonte,
+.home-map__svg #sao-paulo,
+.home-map__svg #rio-de-janeiro,
+.home-map__svg #porto-alegre {
+  fill: #0178d7;
+  r: 3;
+  animation-name: localMap;
+  animation-duration: .7s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
 .home-map__photos {
   min-width: 370px;
 }
@@ -190,6 +213,12 @@ header .languages img {
 
 .home-map__photos-small > img {
   width: 170px;
+}
+
+@keyframes localMap {
+  100% {
+    r: 5;
+  }
 }
 
 .home-about {
@@ -332,6 +361,77 @@ header .languages img {
   color: #59606a;
 }
 
+.home-themes {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.home-themes__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-themes__item {
+  width: 33.3%;
+  display: flex;
+  margin-bottom: 50px;
+  padding-right: 70px;
+}
+
+.home-themes__icon {
+  min-width: 50px;
+  margin-right: 20px;
+}
+
+.home-themes img {
+  width: 50px;
+}
+
+.home-themes h3 {
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.home-themes h4 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.home-themes p {
+  font-size: 14px;
+}
+
+footer {
+  background-color: #fafafa;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer .footer-links {
+  padding-top: 70px;
+  margin-bottom: 70px;
+}
+
+footer .footer-brand {
+  padding-bottom: 90px;
+}
+
 /* MM: Screen */
 
 /* SM: Screen */
@@ -426,6 +526,10 @@ header .languages img {
 
   .home-ondas__options-single {
     width: 100%;
+  }
+
+  .home-themes__item {
+    width: 50%;
   }
 }
 
